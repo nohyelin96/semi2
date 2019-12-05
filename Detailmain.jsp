@@ -28,19 +28,34 @@
 	#smallImg{
 		text-align: center;
 	}
-	#sitterInfo{
-		margin-top: 20px;
-		width: 800px;
-	}
-	
 	#s_photo{
 		border: 1px;
 		border-radius: 100%;
 		width: 100px;
 		object-fit:cover;
 	}
+	#sitterInfo{
+		width: 800px;
+		height: 100px;
+		margin: 20px 0 30px 0;
+	}
+	#sitterInfo #name,#local{
+		text-align: center;
+	}
 	#name{
 		font-size: 1.5em;
+		margin: 30px 0 0 30px;
+	}
+	#local{
+		float: right;
+		margin: 30px 30px 0 0;
+	}
+	#heart{
+		float: right;
+		margin: 5px 20px 0 0;
+	}
+	#pettype{
+		width: 800px;
 	}
 </style>
 
@@ -54,14 +69,20 @@
 			<img id="img3" alt="작은사진2" src="../image/dog1.PNG">
 			<img id="img4" alt="작은사진3" src="../image/dog1.PNG">
 		</div>
+		
 		<div id="sitterInfo">
-			<div id="circle">
 			<img id="s_photo" alt="시터의 이미지 사진" src="../image/girl.jpg">
 			<span id="name">황지영</span>&nbsp;&nbsp;
-			<span>
-			<img alt="현재지역 아이콘" src="../image/location.png" width="30px" height="30px">
+			<img id="heart" alt="하트 아이콘클릭하면 컬러로 바뀝니다. 로그인상태에서만 가능" src="../image/heart1.png">
+			<span id="local">
+			<img alt="현재지역 아이콘" src="../image/local.jpg" width="30px" height="30px">
 			서울 서대문구 거북골로24길 5</span>
-			</div>
+		</div>
+		<hr>
+		
+		<div id="pettype">
+			<article id="type1"></article>
+			<article id="type2"></article>
 		</div>
 	</article>
 	
